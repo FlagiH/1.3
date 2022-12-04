@@ -46,7 +46,6 @@ html, body {
 .header {
   height: 88px;
   background-color: #FFFFFF;
-  width: 320px;
 }
 
 .header__items {
@@ -102,10 +101,6 @@ html, body {
   background-color: #EAEAEA;
 }
 
-main {
-  width: 320px;
-}
-
 .main__header {
   display: flex;
   font-family: 'TT Lakes Bold';
@@ -136,6 +131,7 @@ main {
   color: #7E7E82;
   border: none;
   white-space: nowrap;
+  background-color: transparent;
 }
 
 .nav__button--active {
@@ -148,12 +144,23 @@ main {
   border-radius: 6px;
 }
 
+.section {
+  margin-top: 24px;
+  display: flex;
+}
+
 .section__text {
-  margin: 0 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.section__text + .section__text {
+  margin-top: 16px;
 }
 
 .section__button {
   border: none;
+  background-color: transparent;
 }
 
 .section__button::before {
