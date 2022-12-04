@@ -147,3 +147,28 @@ main {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
 }
+
+.section__text {
+  margin: 0 16px;
+}
+
+.main__button {
+  border: none;
+}
+
+.main__button::before {
+  content: '';
+  display: inline-block;
+  background-image: url('assets/icons/icon.png');
+  width: 8px;
+  height: 11px;
+  margin-left: 24px;
+  margin-right: 16px;
+  margin-top: 24px;
+}
+
+.main__article {
+  background-image: url('assets/icons/photo.png');
+  width: 320px;
+  height: 230px;
+}
