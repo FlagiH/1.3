@@ -143,5 +143,7 @@ main {
   padding-left: 17px;
   padding-bottom: 8px;
   padding-right: 9px;
-  border: 1px solid white;
+  background: #FFFFFF;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
 }
