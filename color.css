@@ -83,6 +83,23 @@ html, body {
   margin-right: 16px;
 }
 
+.button__chel {
+  background-image: url('assets/icons/chel.png')
+}
+
+.button__sms {
+  background-image: url('assets/icons/sms.png')
+}
+
+.button__phone {
+  background-image: url('assets/icons/phone.png')
+}
+
+.invisibol {
+  display: none;
+  margin-left: auto;
+}
+
 .header__logo {
   background-image: url('assets/icons/Group.png');
   outline: none;
@@ -99,6 +116,7 @@ html, body {
   width: 2px;
   height: 32px;
   background-color: #EAEAEA;
+  margin-left: 17px;
 }
 
 .main__header {
@@ -146,7 +164,6 @@ html, body {
 
 .section {
   margin-top: 24px;
-  display: flex;
 }
 
 .section__text {
@@ -177,4 +194,17 @@ html, body {
 .section__img {
   padding-top: 27px;
   padding-bottom: 27px;
+}
+
+@media (min-width: 378px) {
+  .section {
+    display: flex;
+  }
+  .button__phone {
+    margin-left: auto;
+  }
+
+  .invisibol {
+    display: flex;
+  }
 }
