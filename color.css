@@ -144,7 +144,17 @@ html, body {
   background: #41F6D7;
   margin-right: 16px;
 }
-  
+
+.main__title {
+  display: flex;
+}
+
+.title__button {
+ display: none;
+}
+
+
+
 .nav {
   display: flex;
   overflow: auto;
@@ -225,5 +235,16 @@ html, body {
 @media (min-width: 1120px) {
   .nav {
     flex-wrap: wrap;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .title__button {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 16px;
   }
 }
