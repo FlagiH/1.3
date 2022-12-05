@@ -70,12 +70,18 @@ html, body {
 
 .button__burger {
   background-image: url('assets/icons/burger.png');
-
 }
 
 .button__repair {
   background-image: url('assets/icons/repair.png');
+}
 
+.button__dividers {
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  margin-left: 17px;
+  display: none;
 }
 
 .button__checkstatus {
@@ -109,7 +115,7 @@ html, body {
   height: 51px;
   border: none;
   background-color: transparent;
-  margin: 0 16px;
+  margin: 0 8px;
 }
 
 .button__divider {
@@ -141,7 +147,7 @@ html, body {
   
 .nav {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .nav__button {
@@ -178,6 +184,7 @@ html, body {
 .section__button {
   border: none;
   background-color: transparent;
+  margin-bottom: 16px;
 }
 
 .section__button::before {
@@ -192,11 +199,10 @@ html, body {
 }
 
 .section__img {
-  padding-top: 27px;
   padding-bottom: 27px;
 }
 
-@media (min-width: 378px) {
+@media (min-width: 768px) {
   .section {
     display: flex;
   }
@@ -206,5 +212,10 @@ html, body {
 
   .invisibol {
     display: flex;
+  }
+
+  .button__dividers {
+    display: flex;
+    margin-right: 8px;
   }
 }
