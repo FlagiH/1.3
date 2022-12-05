@@ -200,6 +200,8 @@ html, body {
 
 .section__img {
   padding-bottom: 27px;
+  width: 100%;
+  max-width: 531px;
 }
 
 @media (min-width: 768px) {
@@ -217,5 +219,11 @@ html, body {
   .button__dividers {
     display: flex;
     margin-right: 8px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .nav {
+    flex-wrap: wrap;
   }
 }
