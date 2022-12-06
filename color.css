@@ -153,7 +153,18 @@ html, body {
  display: none;
 }
 
+.title__checkstatus {
+  margin-left: 10px;
+  font-family: 'TT Lakes Medium';
+}
 
+.auto {
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  width: 19.31px;
+  height: 40px;
+  position: absolute;
+  right: 0%;
+}
 
 .nav {
   display: flex;
@@ -246,5 +257,9 @@ html, body {
     align-items: center;
     margin-left: auto;
     padding-right: 16px;
+  }
+
+  .auto {
+    display: none;
   }
 }
