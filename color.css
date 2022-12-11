@@ -31,6 +31,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
   background-color: #F2F2F2;
 }
 
@@ -54,7 +55,7 @@ html, body {
   display: flex;
 }
 
-.button {
+.button__icon {
   border-radius: 50%;
   background-color: #FF3E79;
   outline: none;
@@ -68,11 +69,11 @@ html, body {
   margin-bottom: 24px;
 }
 
-.button__burger {
+.button__icon--burger {
   background-image: url('assets/icons/burger.png');
 }
 
-.button__repair {
+.button__icon--repair {
   background-image: url('assets/icons/repair.png');
 }
 
@@ -84,20 +85,20 @@ html, body {
   display: none;
 }
 
-.button__checkstatus {
+.button__icon--checkstatus {
   background-image: url('assets/icons/checkstatus.png');
   margin-right: 16px;
 }
 
-.button__chel {
+.button__icon--chel {
   background-image: url('assets/icons/chel.png')
 }
 
-.button__sms {
+.button__icon--sms {
   background-image: url('assets/icons/sms.png')
 }
 
-.button__phone {
+.button__icon--phone {
   background-image: url('assets/icons/phone.png')
 }
 
@@ -158,21 +159,24 @@ html, body {
   font-family: 'TT Lakes Medium';
 }
 
-.auto {
-  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-  width: 19.31px;
-  height: 40px;
-  position: absolute;
-  right: 0%;
-}
 
 .nav {
   display: flex;
   overflow: auto;
 }
 
+.nav::after {
+  background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+  width: 19.31px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  content: '';
+  display: block;
+}
+
 .nav__button {
-  margin-left: 16px;
+  margin: 0 16px;
   color: #7E7E82;
   border: none;
   white-space: nowrap;
@@ -183,7 +187,7 @@ html, body {
   padding-top: 8px;
   padding-left: 17px;
   padding-bottom: 8px;
-  padding-right: 9px;
+  padding-right: 17px;
   background: #FFFFFF;
   border: 2px solid #B8FFEC;
   border-radius: 6px;
@@ -200,6 +204,10 @@ html, body {
 
 .section__text + .section__text {
   margin-top: 16px;
+}
+
+.section__text--hidden {
+  display: none;
 }
 
 .section__button {
@@ -229,7 +237,7 @@ html, body {
   .section {
     display: flex;
   }
-  .button__phone {
+  .button__icon--phone {
     margin-left: auto;
   }
 
@@ -240,6 +248,10 @@ html, body {
   .button__dividers {
     display: flex;
     margin-right: 8px;
+  }
+
+  .section__text--hidden--768 {
+    display: block;
   }
 }
 
@@ -259,7 +271,11 @@ html, body {
     padding-right: 16px;
   }
 
-  .auto {
+  .nav::after {
     display: none;
+  }
+
+  .section__text--hidden--1120 {
+    display: contents;
   }
 }
