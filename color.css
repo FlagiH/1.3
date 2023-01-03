@@ -71,6 +71,7 @@ html, body {
 
 .button__icon--burger {
   background-image: url('assets/icons/burger.png');
+  margin-right: 16px;
 }
 
 .button__icon--repair {
@@ -245,6 +246,10 @@ html, body {
     display: flex;
   }
 
+  .header {
+    margin-left: -8px;
+  }
+
   .button__dividers {
     display: flex;
     margin-right: 8px;
@@ -253,11 +258,35 @@ html, body {
   .section__text--hidden--768 {
     display: block;
   }
+
+  .main__header:before {
+    margin-left: -8px;
+  }
+
+  body {
+    padding-left: 8px;
+  }
+
+  .button__icon--burger {
+    margin-right: 0;
+  }
+
+  .section__img {
+    border-radius: 6px;
+  }
 }
 
 @media (min-width: 1120px) {
   .nav {
     flex-wrap: wrap;
+  }
+
+  .main__header:before {
+    margin-left: -16px;
+  }
+
+  .header {
+    margin-left: -16px;
   }
 
   .header {
@@ -275,7 +304,19 @@ html, body {
     display: none;
   }
 
+  .button__icon--burger {
+    margin-right: 0;
+  }
+
   .section__text--hidden--1120 {
     display: contents;
+  }
+
+  body {
+    padding-left: 16px;
+  }
+
+  .section__img {
+    border-radius: 6px;
   }
 }
