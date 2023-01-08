@@ -45,6 +45,10 @@ html, body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .main > *, .header > * {
   margin-left: 16px;
 }
@@ -83,7 +87,7 @@ html, body {
   background-image: url('assets/icons/repair.png');
 }
 
-.button__dividers {
+.button__divider--left {
   width: 2px;
   height: 32px;
   background-color: #EAEAEA;
@@ -94,6 +98,7 @@ html, body {
 .header__items > .button__icon + .button__icon {
   margin-left: 16px;
 } */
+
 
 .button__icon--checkstatus {
   background-image: url('assets/icons/checkstatus.png');
@@ -111,7 +116,7 @@ html, body {
   background-image: url('assets/icons/phone.png')
 }
 
-.invisibol--hidden--320 {
+.invisible--hidden--320 {
   display: none;
   margin-left: auto;
 }
@@ -128,7 +133,7 @@ html, body {
   margin: 0 8px;
 }
 
-.button__divider {
+.button__divider--right {
   margin-right: auto;
   width: 2px;
   height: 32px;
@@ -265,7 +270,7 @@ html, body {
     display: flex;
   }
 
-  .button__divider {
+  .button__divider--right {
     margin-right: 16px;
   }
 
@@ -277,11 +282,11 @@ html, body {
     margin-left: 24px;
   }
 
-  .invisibol--hidden--320 {
+  .invisible--hidden--320 {
     display: flex;
   }
 
-  .button__dividers {
+  .button__divider--left {
     display: flex;
     margin-right: 8px;
   }
